@@ -7,9 +7,9 @@ import router from '@/router/index.js';
   <div>
   <img src="../assets/logotipo.png" class="logotipo"></div>
   
-  <div style="display: flex;flex-direction: column;justify-content: center;">
-    <RouterLink to="/">Tela inicial</RouterLink>
-    <RouterLink to="/Login">Entrar</RouterLink></div>
+  <div style="display: flex;flex-direction: column;justify-content: center; font-size: larger; font-family: Impact, 'Arial Narrow Bold', sans-serif;">
+    <button class= "buttontela" ><RouterLink to="/">Tela inicial</RouterLink></button>
+    <button class= "buttonlogin" ><RouterLink to="/Login">Entrar</RouterLink></button></div>
   <div></div>
 </div>
 </template>
@@ -43,6 +43,24 @@ img{
   text-decoration: none;
   transition: 0.4s;
   padding: 3px;
+
+
+.buttontela {
+  padding: 5px; 
+  background-color: #2c5858; 
+  color: rgb(248, 17, 17); 
+  text-decoration: none; 
+  border-radius: 5px; 
+  box-shadow: 5px 5px;
 }
 
+.buttonlogin {
+  padding: 5px; 
+  background-color: #2c5858; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  box-shadow: 5px 5px;
+}
+}
 </style>

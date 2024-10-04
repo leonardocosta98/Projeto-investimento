@@ -5,7 +5,7 @@ import investir from '../assets/investir.jpg';
 </script>
 
 <template>
-    <div class="post">
+        <div class="post" style="font-size: xx-large;">
         <PostModelo titulo="O que é investimento?"  
         :imagem="investir"
         CorpoDoTexto="Investimento é a alocação de dinheiro em ativos com o objetivo de obter retorno econômico no futuro. 

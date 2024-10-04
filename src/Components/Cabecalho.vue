@@ -16,8 +16,8 @@ import router from '@/router/index.js';
 
 <style scoped>
 .logotipo{
-  width: 110px;
-  height: 60px;
+  width: 130px;
+  height: 85px;
 }
 
 img{

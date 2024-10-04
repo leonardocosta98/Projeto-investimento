@@ -1,6 +1,6 @@
 <script setup>
 import PostModelo from './PostModelo.vue';
-import Olimpiadas from '../assets/Olimpiadas.jpg';
+import Olimpiadas from '../assets/olimpiadas.jpg';
 
 </script>
 

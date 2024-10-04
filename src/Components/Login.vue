@@ -4,9 +4,9 @@
 <template>
 <div class="container">
     <h1>Entar na sua conta</h1>
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="Email:">
     <br>
-    <input type="text" placeholder="Senha">
+    <input type="text" placeholder="Senha:">
     <br>
     <button class="btnLogin">Enviar</button>
     <br>
@@ -23,14 +23,17 @@
 }
 .btnLogin {
   padding: 5px; 
-  background-color: #cf0000; 
+  background-color: #2c5858; 
   color: white; 
   text-decoration: none; 
   border-radius: 5px; 
+  box-shadow: 5px 5px;
 }
 
 .btnLogin:hover{
-    background-color: #db5252;
+    background-color: #06fab1;
     cursor: pointer;
+    color: black;
+    box-shadow: 5px 5px
 }
 </style>

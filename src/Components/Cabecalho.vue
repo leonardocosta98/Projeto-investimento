@@ -3,11 +3,14 @@ import router from '@/router/index.js';
 </script>
 
 <template>
-<div class="Cabecalho" style="display: flex;
-justify-content: center;">
-    <img src="../assets/logotipo.png" class="logotipo">
+<div class="Cabecalho" style="display: flex;justify-content: space-between;">
+  <div>
+  <img src="../assets/logotipo.png" class="logotipo"></div>
+  
+  <div style="display: flex;flex-direction: column;justify-content: center;">
     <RouterLink to="/">Tela inicial</RouterLink>
-    <RouterLink to="/Login">Entrar</RouterLink>
+    <RouterLink to="/Login">Entrar</RouterLink></div>
+  <div></div>
 </div>
 </template>
 
@@ -25,7 +28,7 @@ img{
 .Cabecalho {
   height: 80px;
   width: 100%;
-  background-color: rgb(214, 0, 0);
+  background-color: rgb(197, 250, 234);
   position: relative;
   display: flex; 
   align-items: center; 

@@ -35,6 +35,8 @@ import Botao from './Botao.vue';
     img {
       height: 110px;
       padding: 20px;
+      background-color: rgb(104, 9, 28);
+      border-radius: 10px 10px 10px 10px;
     }
 
     h1{

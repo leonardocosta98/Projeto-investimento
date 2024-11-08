@@ -28,7 +28,8 @@
     
     a:hover{
         color: white;
-        background-color: green;
+        background-color:rgb(104, 9, 28);
         padding: 10px 20px;
+        border-radius: 10px 10px 10px 10px;
     }
 </style>

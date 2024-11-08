@@ -8,9 +8,7 @@
             }
         },
         methods: {
-            // Método que emite um evento para o componente pai
             emitLogin() {
-                // chama o método checkLogin do componente pai
                 console.log("Email: " + this.email);
                 this.$emit("login", this.email);
             },
@@ -23,8 +21,8 @@
         <h1>Login</h1>
         <form>
             <label for="email">E-mail:</label>
-            <input v-model="email" placeholder="Enter your email" />
-            <label for="senha">Senha:</label>
+            <input v-model="email" placeholder="Email:" />
+            <br><label for="senha">Senha:</label>
             <input v-model="senha" type="password" id="senha" name="senha">
             <button @click="emitLogin">Entrar</button>
         </form>
@@ -38,5 +36,6 @@
 
     h1, h2 {
         font-weight: bolder;
+        text-align: center;
     }
 </style>

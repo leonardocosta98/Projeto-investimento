@@ -5,9 +5,11 @@
 </script>
 
 <template>
+    <div id="area-postagem">
     <Postagem1/>
     <Postagem2/>
     <Postagem3/>
+    </div>
 </template>
 
 <style>

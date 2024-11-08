@@ -1,39 +1,42 @@
 <script>
+    export default {
+        name: "Login",
+        data() {
+            return {
+                email: "",
+                senha: ""
+            }
+        },
+        methods: {
+            // Método que emite um evento para o componente pai
+            emitLogin() {
+                // chama o método checkLogin do componente pai
+                console.log("Email: " + this.email);
+                this.$emit("login", this.email);
+            },
+        }
+    }
 </script>
 
 <template>
-<div class="container">
-    <h1>Entar na sua conta</h1>
-    <input type="email" placeholder="Email:">
-    <br>
-    <input type="text" placeholder="Senha:">
-    <br>
-    <button class="btnLogin">Enviar</button>
-    <br>
-</div>
+    <div id="login">
+        <h1>Login</h1>
+        <form>
+            <label for="email">E-mail:</label>
+            <input v-model="email" placeholder="Enter your email" />
+            <label for="senha">Senha:</label>
+            <input v-model="senha" type="password" id="senha" name="senha">
+            <button @click="emitLogin">Entrar</button>
+        </form>
+    </div>
 </template>
 
 <style scoped>
-.container{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    display: flex;
-}
-.btnLogin {
-  padding: 5px; 
-  background-color: #2c5858; 
-  color: white; 
-  text-decoration: none; 
-  border-radius: 5px; 
-  box-shadow: 5px 5px;
-}
+    h1{
+        font-size: 70px;
+    }
 
-.btnLogin:hover{
-    background-color: #06fab1;
-    cursor: pointer;
-    color: black;
-    box-shadow: 5px 5px
-}
+    h1, h2 {
+        font-weight: bolder;
+    }
 </style>

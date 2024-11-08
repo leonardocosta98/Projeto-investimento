@@ -1,49 +1,27 @@
 <script>
-export default {
-  name: 'PostModelo',
-  props: {
-    titulo: String,
-    CorpoDoTexto: String,
-    autor: String,
-    imagem: String
-  }
-}
+    export default {
+        props: {
+            titulo: String,
+            corpoDoTexto: String,
+            autor: String,
+            imagem: String
+        }
+    }
 </script>
 
 <template>
     <div class="post">
-        <h2>{{ titulo }}</h2>
-        <img :src="imagem" class="imag">
+        <img :src="imagem">
+        <h2>{{titulo}}</h2>
         <p>
-          {{ CorpoDoTexto }}
+          {{corpoDoTexto}}
         </p>
-        <p class="autor">{{ autor }}</p>
-        <br>
-    </div>
+        <p class="autor">
+          por {{autor}}
+        </p>
+      </div>
 </template>
 
-<style scoped>
-
-.post{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.imag {
-  height: 600px;
-  width: 1000px;
-}
-
-h2, p{
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.autor{
-  position: absolute;
-  left: 1040px;
-  top: auto;
-}
+<style>
 
 </style>

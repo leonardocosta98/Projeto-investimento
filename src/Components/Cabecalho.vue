@@ -24,7 +24,7 @@ import Botao from './Botao.vue';
       <img class="logotipo" :src="logotipo">
       <nav class="cabecalho-col2" v-if="obterRotaAtual()!='/'">
         <Botao textoDoBotao="Login/Logout" link="/"/>
-        <Botao textoDoBotao="Postagens" link="/areapostagem"/>
+        <Botao textoDoBotao="Postagens" link="/Areapostagem"/>
         <p v-if="usuario">Bem-vindo, {{usuario}}</p>
       </nav>
     </div>

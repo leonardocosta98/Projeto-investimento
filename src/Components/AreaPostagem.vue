@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div id="area-postagem">
+    <div id="Area-postagem">
     <Postagem1/>
     <Postagem2/>
     <Postagem3/>

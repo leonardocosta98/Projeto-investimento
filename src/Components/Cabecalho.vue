@@ -23,7 +23,7 @@ import Botao from './Botao.vue';
       <div id="cabecalho">
       <img class="logotipo" :src="logotipo">
       <nav class="cabecalho-col2" v-if="obterRotaAtual()!='/'">
-        <Botao textoDoBotao="Login/Logout" link="/"/>
+        <Botao textoDoBotao="Login" link="/"/>
         <Botao textoDoBotao="Postagens" link="/Areapostagem"/>
         <p v-if="usuario">Bem-vindo, {{usuario}}</p>
       </nav>
@@ -45,5 +45,9 @@ import Botao from './Botao.vue';
 
     h1, h2 {
         font-weight: bolder;
+    }
+    nav{
+      text-align: right;
+      font-family:Arial, Helvetica, sans-serif;
     }
 </style>

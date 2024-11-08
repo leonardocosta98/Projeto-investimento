@@ -16,7 +16,6 @@
       }
     },
     methods: {
-      // Metodo que recebe o email do componente filho
       checkLogin(email) {
         console.log("Usuario recebido: " + email);
         this.email = email;
